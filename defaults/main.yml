@@ -2,6 +2,10 @@
 
 # perform full update+upgrade
 raspi_config_update_packages: true
+# configure unattended upgrades
+raspi_config_autoupdate_enabled: false
+raspi_config_autoupdate_reboot: "false"
+raspi_config_autoupdate_reboot_time: "03:00"
 # have the FS fill the SD card
 raspi_config_expanded_filesystem: true
 # how much memory should be owned by the GPU (vs RAM)

@@ -6,6 +6,9 @@
     upgrade: dist
   when: raspi_config_update_packages
 
+- import_tasks: autoupdate.yml
+  when: raspi_config_autoupdate_enabled
+
 - name: sets the timezone
   timezone:
     name: "{{ raspi_config_timezone }}"
